@@ -225,4 +225,4 @@ Define `themed-stylesheets()` mixin before invoking `make-stylesheets()` with on
 
 # Sample
 
-Comming soon ...
+https://github.com/mirismaili/AngularMaterialDynamicThemes
