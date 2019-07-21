@@ -1,0 +1,4 @@
+*
+!/LICENSE
+!/dist/types/**/*
+!/dist/main.js

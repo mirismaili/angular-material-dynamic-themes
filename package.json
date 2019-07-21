@@ -1,0 +1,36 @@
+{
+  "name": "angular-material-dynamic-themes",
+  "version": "0.0.0",
+  "description": "A library to make it easier to add dynamic themes (changeable at run-time) to you Angular Material app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mirismaili/AngularMaterialDynamicThemes.git"
+  },
+  "keywords": [
+    "angular",
+    "angular-material",
+    "angular-material-theme",
+    "angular-material-themes",
+    "theme",
+    "themes",
+    "dynamic-theme",
+    "dynamic-themes",
+    "runtime-theme-change",
+    "runtime-change-themes"
+  ],
+  "author": "S. M. Mir-Ismaili <s.m.mirismaili@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mirismaili/AngularMaterialDynamicThemes/issues"
+  },
+  "homepage": "https://github.com/mirismaili/AngularMaterialDynamicThemes#readme",
+  "devDependencies": {
+    "@angular/material": "^8.1.1"
+  },
+  "peerDependencies": {
+    "@angular/material": "^7.0.0 || ^8.0.0"
+  }
+}
