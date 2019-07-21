@@ -12,7 +12,7 @@
         <img src="https://packagephobia.now.sh/badge?p=angular-material-dynamic-themes" alt="install size">
     </a>
     <br>
-   <a href="http://commitizen.github.io/cz-cli/">
+    <a href="http://commitizen.github.io/cz-cli/">
         <img alt="Commitizen friendly" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg">
     </a>
     <br>
@@ -34,7 +34,7 @@ A library to make it easier to add dynamic themes (changeable at run-time) to yo
 * [Advanced Usage](#advanced-usage)
   * [Possible configurations](#possible-configurations)
   * [Use material themes for other elements (non\-material elements)](#use-material-themes-for-other-elements-non-material-elements)
-* [Sample](#sample)
+* [Demo](#demo)
 
 # Installation
 
@@ -223,6 +223,6 @@ Define `themed-stylesheets()` mixin before invoking `make-stylesheets()` with on
 }
 ```
 
-# Sample
+# Demo
 
 https://github.com/mirismaili/AngularMaterialDynamicThemes
