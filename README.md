@@ -16,7 +16,7 @@
         <img alt="Commitizen friendly" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg">
     </a>
     <br>
-    <a href="https://github.com/mirismaili/AngularMaterialDynamicThemes/blob/master/LICENSE">
+    <a href="https://github.com/mirismaili/angular-material-dynamic-themes/blob/master/LICENSE">
         <img alt="GitHub" src="https://img.shields.io/github/license/mirismaili/angular-material-dynamic-themes.svg">
     </a>
 </p>
@@ -130,7 +130,7 @@ And change the theme using `setTheme()` whenever you want. ✓
 
 ## Possible configurations
 
-`make-stylesheets()` is the only thing in the API and gets a single parameter named `$themes-map` that was a *map* like what you saw in [Basic Usage](#basic-usage). You can see its documentation in the sources. But we bring the most important section of it here, that is **the schema of each member (of this map)**:
+`make-stylesheets()` is the only thing in the API and gets a single parameter named `$themes-map` that was a *map* like what you saw in [Basic Usage](#basic-usage). You can see its documentation in the sources. But we bring the most important section of it here, that is **the schema of each member** (of the map):
 
 ```
 css-class-name: (
