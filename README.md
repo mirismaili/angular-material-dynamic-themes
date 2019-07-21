@@ -27,6 +27,15 @@ A library to make it easier to add dynamic themes (changeable at run-time) to yo
 
 ***
 
+**Table of Contents**
+
+* [Installation](#installation)
+* [Basic Usage](#basic-usage)
+* [Advanced Usage](#advanced-usage)
+  * [Possible configurations](#possible-configurations)
+  * [Use material themes for other elements (non\-material elements)](#use-material-themes-for-other-elements-non-material-elements)
+* [Sample](#sample)
+
 # Installation
 
 In your **Angular Material project**:
