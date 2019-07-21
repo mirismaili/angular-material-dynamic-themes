@@ -12,14 +12,11 @@
         <img src="https://packagephobia.now.sh/badge?p=angular-material-dynamic-themes" alt="install size">
     </a>
     <br>
-    <a href="https://github.com/mirismaili/angular-material-dynamic-themes/fork">
-        <img src="https://img.shields.io/github/forks/mirismaili/angular-material-dynamic-themes.svg?style=social" alt="GitHub forks">
-    </a>
-    <a href="https://github.com/mirismaili/angular-material-dynamic-themes">
-        <img src="https://img.shields.io/github/stars/mirismaili/angular-material-dynamic-themes.svg?style=social" alt="GitHub stars">
+   <a href="http://commitizen.github.io/cz-cli/">
+        <img alt="Commitizen friendly" src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg">
     </a>
     <br>
-    <a href="https://github.com/mirismaili/angular-material-dynamic-themes/blob/master/LICENSE">
+    <a href="https://github.com/mirismaili/AngularMaterialDynamicThemes/blob/master/LICENSE">
         <img alt="GitHub" src="https://img.shields.io/github/license/mirismaili/angular-material-dynamic-themes.svg">
     </a>
 </p>
