@@ -77,7 +77,7 @@ $themes-map: (
 );
 
 // Import the library and do the job:
-@import 'angular-material-dynamic-themes/themes-core';
+@import '~angular-material-dynamic-themes/themes-core';
 @include make-stylesheets($themes-map);
 ```
 
