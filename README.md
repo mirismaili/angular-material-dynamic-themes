@@ -25,6 +25,8 @@
 
 A library to make it easier to add dynamic themes (changeable at run-time) to you Angular Material app
 
+[![Video](https://raw.githubusercontent.com/mirismaili/AngularMaterialDynamicThemes/572b07011fd8f00c9444ada23be3f6105ea66901/res/preview.gif "Demo application video")](https://github.com/mirismaili/AngularMaterialDynamicThemes)
+
 ***
 
 **Table of Contents**
@@ -226,3 +228,5 @@ Define `themed-stylesheets()` mixin before invoking `make-stylesheets()` with on
 # Demo
 
 https://github.com/mirismaili/AngularMaterialDynamicThemes
+
+[![Video](https://raw.githubusercontent.com/mirismaili/AngularMaterialDynamicThemes/572b07011fd8f00c9444ada23be3f6105ea66901/res/preview.gif "Demo application video")](https://github.com/mirismaili/AngularMaterialDynamicThemes)
