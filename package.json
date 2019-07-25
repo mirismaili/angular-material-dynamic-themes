@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Making able the app to switch between material themes at run-time",
   "scripts": {
-    "README.md-TOC": "node markdown-toc.js -f README.md"
+    "README.md-TOC": "node markdown-toc.js -f README.md",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -29,9 +30,15 @@
   "homepage": "https://github.com/mirismaili/angular-material-dynamic-themes#readme",
   "devDependencies": {
     "@angular/material": "^8.1.1",
+    "cz-conventional-changelog": "^2.1.0",
     "yargs": "^13.3.0"
   },
   "peerDependencies": {
     "@angular/material": "^7.0.0 || ^8.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
