@@ -4,7 +4,8 @@
   "description": "Making able the app to switch between material themes at run-time",
   "scripts": {
     "README.md-TOC": "node markdown-toc.js -f README.md",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "semantic-release": "npx semantic-release"
   },
   "repository": {
     "type": "git",

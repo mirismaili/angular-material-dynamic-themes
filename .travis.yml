@@ -1,0 +1,27 @@
+language: node_js
+
+cache: npm
+
+# `XX` means "false", "forbidden", "disabled", etc
+# `YY` means "yes", "true", "force", etc
+
+jobs:
+  include:
+    - stage: "Release"
+
+      name: "Build and Release"
+      node_js: --lts
+
+      if: tag !~ ^(v|typedoc-)\d+\.\d+\.\d+ && (
+        env(SEMANTIC_RELEASE) == YY ||
+          env(SEMANTIC_RELEASE) != XX && type == push && branch == master &&
+          commit_message =~ /^(?:feat|fix|refactor|pref|build|revert)/)
+
+      deploy:
+        provider: script
+        skip_cleanup: true
+
+        # `bash -c ...` is required for the script in `deploy` section. Also, quotes around env-vars even in `if [[ ]]`.
+        script: bash -c '
+          npx semantic-release@$SEMANTIC_RELEASE_VERSION;
+          '
