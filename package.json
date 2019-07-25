@@ -1,7 +1,7 @@
 {
   "name": "angular-material-dynamic-themes",
   "version": "0.0.3",
-  "description": "A library to make it easier to add dynamic themes (changeable at run-time) to you Angular Material app",
+  "description": "Making able the app to switch between material themes at run-time",
   "scripts": {
     "README.md-TOC": "node markdown-toc.js -f README.md"
   },
