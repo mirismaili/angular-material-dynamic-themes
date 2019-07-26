@@ -128,6 +128,10 @@ export class AppComponent {
 
 And change the theme using `setTheme()` whenever you want. ✓
 
+> A more detailed instruction can be found here:
+
+> [https://medium.com/@s.m.mirismaili/angular-material-dynamic-themes-compatible-with-angular-7-8-e642ad3c09f4](https://medium.com/@s.m.mirismaili/angular-material-dynamic-themes-compatible-with-angular-7-8-e642ad3c09f4)
+
 # Advanced Usage
 
 ## Possible configurations
