@@ -53,6 +53,8 @@ In your `styles.scss` (or `themes.scss` if you have):
 ```scss
 // Below codes should only be included ONCE in your application.
 
+@import '~@angular/material/theming';
+
 @include mat-core();
 
 // Add your desired themes to this map.
@@ -98,9 +100,9 @@ export class AppComponent {
     isThemeDark = false
     activeTheme: string
 
-    constructor(overlayContainer: OverlayContainer) {
+    constructor(private overlayContainer: OverlayContainer) {
         // Set default theme here:
-        this.setTheme('deeppurple-amber', false)
+        this.setTheme('deeppurple-amber', /* darkness: */ false)
     }
 
     setTheme(theme: string, darkness: boolean = null) {
