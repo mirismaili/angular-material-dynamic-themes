@@ -25,7 +25,7 @@
 
 Making able the app to switch between material themes at run-time
 
-[![Video](https://raw.githubusercontent.com/mirismaili/AngularMaterialDynamicThemes/572b07011fd8f00c9444ada23be3f6105ea66901/res/preview.gif "Demo application video")](https://github.com/mirismaili/AngularMaterialDynamicThemes)
+[![Video](https://raw.githubusercontent.com/mirismaili/AngularMaterialDynamicThemes/master/res/preview0.gif "Video")](https://github.com/mirismaili/AngularMaterialDynamicThemes)
 
 ***
 
@@ -45,6 +45,8 @@ In your **Angular Material project**:
 ```bash
 npm install angular-material-dynamic-themes
 ```
+
+> NOTE: This solution is only compatible with **SASS/SCSS** preprocessor.
 
 # Basic Usage
 
@@ -80,7 +82,7 @@ $themes-map: (
   ),
 );
 
-// Import the library and do the job:
+// Import the module and do the job:
 @import '~angular-material-dynamic-themes/themes-core';
 @include make-stylesheets($themes-map);
 ```
@@ -130,9 +132,9 @@ export class AppComponent {
 
 And change the theme using `setTheme()` whenever you want. ✓
 
-> A more detailed instruction can be found here:
-
-> [https://medium.com/@s.m.mirismaili/angular-material-dynamic-themes-compatible-with-angular-7-8-e642ad3c09f4](https://medium.com/@s.m.mirismaili/angular-material-dynamic-themes-compatible-with-angular-7-8-e642ad3c09f4)
+> **A more detailed instruction can be found here:**
+>
+> **[https://medium.com/@s.m.mirismaili/angular-material-dynamic-themes-compatible-with-angular-7-8-e642ad3c09f4](https://medium.com/@s.m.mirismaili/angular-material-dynamic-themes-compatible-with-angular-7-8-e642ad3c09f4)**
 
 # Advanced Usage
 

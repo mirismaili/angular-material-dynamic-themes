@@ -1,6 +1,6 @@
 {
   "name": "angular-material-dynamic-themes",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Making able the app to switch between material themes at run-time",
   "scripts": {
     "README.md-TOC": "node markdown-toc.js -f README.md",
@@ -21,7 +21,9 @@
     "dynamic-theme",
     "dynamic-themes",
     "runtime-theme-change",
-    "runtime-change-themes"
+    "runtime-change-themes",
+    "sass",
+    "scss"
   ],
   "author": "S. M. Mir-Ismaili <s.m.mirismaili@gmail.com>",
   "license": "MIT",
