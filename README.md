@@ -25,7 +25,7 @@
 
 Making able the app to switch between material themes at run-time
 
-[![Video](https://raw.githubusercontent.com/mirismaili/AngularMaterialDynamicThemes/master/res/preview0.gif "Video")](https://github.com/mirismaili/AngularMaterialDynamicThemes)
+[![Video](https://raw.githubusercontent.com/mirismaili/AngularMaterialDynamicThemes/a979c0284577993c3f3b1c6acccbb7d6e6994003/res/preview0.gif "Video")](https://github.com/mirismaili/AngularMaterialDynamicThemes)
 
 ***
 
@@ -104,10 +104,10 @@ export class AppComponent {
 
     constructor(private overlayContainer: OverlayContainer) {
         // Set default theme here:
-        this.setTheme('deeppurple-amber', /* darkness: */ false)
+        this.setActiveTheme('deeppurple-amber', /* darkness: */ false)
     }
 
-    setTheme(theme: string, darkness: boolean = null) {
+    setActiveTheme(theme: string, darkness: boolean = null) {
         if (darkness === null)
             darkness = this.isThemeDark
         else if (this.isThemeDark === darkness) {
@@ -127,10 +127,14 @@ export class AppComponent {
 
         this.activeThemeCssClass = cssClass
     }
+    
+    toggleDarkness() {
+        this.setActiveTheme(this.activeTheme, !this.isThemeDark)
+    }
 }
 ```
 
-And change the theme using `setTheme()` whenever you want. ✓
+And change the theme using `setActiveTheme()` (or `toggleDarkness()`) whenever you want. ✓
 
 > **A more detailed instruction can be found here:**
 >
