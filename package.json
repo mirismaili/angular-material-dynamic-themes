@@ -1,6 +1,6 @@
 {
   "name": "angular-material-dynamic-themes-eli",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Making able the app to switch between material themes at run-time",
   "scripts": {
     "README.md-TOC": "node markdown-toc.js -f README.md",
@@ -37,7 +37,7 @@
     "yargs": "^13.3.0"
   },
   "peerDependencies": {
-    "@angular/material": "^14.0.0 || ^13.0.0 || ^12.0.0"
+    "@angular/material": "^15.0.0 || ^14.0.0 || ^13.0.0 || ^12.0.0"
   },
   "config": {
     "commitizen": {
