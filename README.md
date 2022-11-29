@@ -1,9 +1,6 @@
 <p dir="auto">
-    <a href="https://npmjs.com/package/angular-material-dynamic-themes">
+    <a href="https://npmjs.com/package/angular-material-dynamic-themes-eli">
         <img alt="npm (scoped)" src="https://img.shields.io/npm/v/angular-material-dynamic-themes.svg">
-    </a>
-    <a href="https://david-dm.org/mirismaili/angular-material-dynamic-themes">
-        <img src="https://david-dm.org/mirismaili/angular-material-dynamic-themes.svg" alt="Dependencies Status">
     </a>
     <a href="https://snyk.io//test/github/mirismaili/angular-material-dynamic-themes?targetFile=package.json">
         <img src="https://snyk.io//test/github/mirismaili/angular-material-dynamic-themes/badge.svg?targetFile=package.json" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io//test/github/mirismaili/angular-material-dynamic-themes?targetFile=package.json">
@@ -20,6 +17,8 @@
         <img alt="GitHub" src="https://img.shields.io/github/license/mirismaili/angular-material-dynamic-themes.svg">
     </a>
 </p>
+
+Originally made by [mirismaili](https://github.com/mirismaili) and published [here](https://www.npmjs.com/package/angular-material-dynamic-themes) but not maintained.
 
 **Angular-Material-Dynamic-Themes**
 
@@ -43,7 +42,7 @@ Making able the app to switch between material themes at run-time
 In your **Angular Material project**:
 
 ```bash
-npm install angular-material-dynamic-themes
+npm install angular-material-dynamic-themes-eli
 ```
 
 > NOTE: This solution is only compatible with **SASS/SCSS** preprocessor.
