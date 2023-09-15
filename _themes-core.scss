@@ -25,6 +25,8 @@
 
 @include mat.core();
 
+mat.$theme-ignore-duplication-warnings: true;
+
 //noinspection SassScssUnresolvedMixin, SassScssResolvedByNameOnly
 @mixin make-stylesheets($themes-map) {
   @each $css-class, $theme in $themes-map {
