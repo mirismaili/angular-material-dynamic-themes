@@ -21,6 +21,10 @@
  * @see `mat-palette()`: https://github.com/angular/components/blob/dcde115980a2e94fae8e667d1dfa300fc82a77cb/src/material/core/theming/_theming.scss#L12-L37
  * @see https://material.angular.io/guide/theming
  */
+@use '@angular/material' as mat;
+
+@include mat.core();
+
 //noinspection SassScssUnresolvedMixin, SassScssResolvedByNameOnly
 @mixin make-stylesheets($themes-map) {
   @each $css-class, $theme in $themes-map {
