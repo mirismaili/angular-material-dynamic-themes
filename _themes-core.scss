@@ -37,7 +37,17 @@
     // Light-themes:
     @if $light-or-dark == '' or $light-or-dark == 'light' or $light-or-dark == 'l' or $light-or-dark == 'both' {
       .#{$css-class} {
-        $mat-theme: mat-light-theme($primary, $accent, $warn);
+        // Define a dark theme
+        $mat-theme: mat.define-light-theme((
+          color: (
+            primary: $primary,
+            accent: $accent,
+            warn: $warn,
+            primary-base: $primary-base,
+            accent-base: $accent-base,
+            warn-base: $warn-base,
+          ),
+        ));
         @include angular-material-theme($mat-theme);
         @if mixin-exists(themed-stylesheets) {
           @include themed-stylesheets($mat-theme);
@@ -48,7 +58,18 @@
     // Dark-themes:
     @if $light-or-dark == '' or $light-or-dark == 'dark' or $light-or-dark == 'd' or $light-or-dark == 'both' {
       .#{$css-class}-dark {
-        $mat-theme: mat-dark-theme($primary, $accent, $warn);
+        $mat-theme: mat.define-dark-theme((
+          color: (
+            primary: $primary,
+            accent: $accent,
+            warn: $warn,
+            primary-base: $primary-base,
+            accent-base: $accent-base,
+            warn-base: $warn-base,
+          ),
+          typography: mat.define-typography-config(),
+          density: 0,
+        ));
         @include angular-material-theme($mat-theme);
         @if mixin-exists(themed-stylesheets) {
           @include themed-stylesheets($mat-theme);
