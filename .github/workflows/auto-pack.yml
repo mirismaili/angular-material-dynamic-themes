@@ -1,0 +1,25 @@
+name: Build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: 18
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm pack
+        run: npm pack
+      - uses: actions/upload-artifact@v3
+        name: Upload Artifact
+        with:
+          name: angular-material-dynamic-themes.zip
+          path: ./*.tgz

@@ -21,6 +21,12 @@
  * @see `mat-palette()`: https://github.com/angular/components/blob/dcde115980a2e94fae8e667d1dfa300fc82a77cb/src/material/core/theming/_theming.scss#L12-L37
  * @see https://material.angular.io/guide/theming
  */
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+mat.$theme-ignore-duplication-warnings: true;
+
 //noinspection SassScssUnresolvedMixin, SassScssResolvedByNameOnly
 @mixin make-stylesheets($themes-map) {
   @each $css-class, $theme in $themes-map {
@@ -37,7 +43,17 @@
     // Light-themes:
     @if $light-or-dark == '' or $light-or-dark == 'light' or $light-or-dark == 'l' or $light-or-dark == 'both' {
       .#{$css-class} {
-        $mat-theme: mat-light-theme($primary, $accent, $warn);
+        // Define a dark theme
+        $mat-theme: mat.define-light-theme((
+          color: (
+            primary: $primary,
+            accent: $accent,
+            warn: $warn,
+            primary-base: $primary-base,
+            accent-base: $accent-base,
+            warn-base: $warn-base,
+          ),
+        ));
         @include angular-material-theme($mat-theme);
         @if mixin-exists(themed-stylesheets) {
           @include themed-stylesheets($mat-theme);
@@ -48,7 +64,18 @@
     // Dark-themes:
     @if $light-or-dark == '' or $light-or-dark == 'dark' or $light-or-dark == 'd' or $light-or-dark == 'both' {
       .#{$css-class}-dark {
-        $mat-theme: mat-dark-theme($primary, $accent, $warn);
+        $mat-theme: mat.define-dark-theme((
+          color: (
+            primary: $primary,
+            accent: $accent,
+            warn: $warn,
+            primary-base: $primary-base,
+            accent-base: $accent-base,
+            warn-base: $warn-base,
+          ),
+          typography: mat.define-typography-config(),
+          density: 0,
+        ));
         @include angular-material-theme($mat-theme);
         @if mixin-exists(themed-stylesheets) {
           @include themed-stylesheets($mat-theme);
