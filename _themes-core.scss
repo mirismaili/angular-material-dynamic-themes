@@ -53,6 +53,10 @@ mat.$theme-ignore-duplication-warnings: true;
             accent-base: $accent-base,
             warn-base: $warn-base,
           ),
+          typography: mat.define-typography-config(
+            $font-family: serif,
+          ),
+          density: 0,
         ));
         @include angular-material-theme($mat-theme);
         @if mixin-exists(themed-stylesheets) {
@@ -73,7 +77,9 @@ mat.$theme-ignore-duplication-warnings: true;
             accent-base: $accent-base,
             warn-base: $warn-base,
           ),
-          typography: mat.define-typography-config(),
+          typography: mat.define-typography-config(
+            $font-family: serif,
+          ),
           density: 0,
         ));
         @include angular-material-theme($mat-theme);
